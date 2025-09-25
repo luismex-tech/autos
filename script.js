@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     const carGrid = document.getElementById('car-grid');
     const modal = document.getElementById('details-modal');
     const closeModalBtn = document.getElementById('close-modal');
@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeLightboxBtn = document.getElementById('close-lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
 
+    // Elementos de filtro
+    const searchBox = document.getElementById('search-box');
+    const conditionFilter = document.getElementById('condition-filter');
+
     let carsData = [];
 
     // Cargar datos de los autos desde el archivo JSON
@@ -17,18 +21,50 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             carsData = data;
-            displayCars(carsData);
+            displayCars(carsData); // Mostrar todos los autos al inicio
         })
         .catch(error => console.error('Error al cargar los datos de los autos:', error));
+
+    // --- LÓGICA DE FILTRADO ---
+    function applyFilters() {
+        const searchTerm = searchBox.value.toLowerCase();
+        const conditionValue = conditionFilter.value;
+
+        const filteredCars = carsData.filter(car => {
+            // Filtrado por término de búsqueda
+            const matchesSearch = (
+                car.make.toLowerCase().includes(searchTerm) ||
+                car.model.toLowerCase().includes(searchTerm) ||
+                car.year.toString().includes(searchTerm)
+            );
+
+            // Filtrado por condición
+            const matchesCondition = (
+                conditionValue === 'all' || car.condition === conditionValue
+            );
+
+            return matchesSearch && matchesCondition;
+        });
+
+        displayCars(filteredCars);
+    }
+
+    searchBox.addEventListener('keyup', applyFilters);
+    conditionFilter.addEventListener('change', applyFilters);
 
     // Función para mostrar las tarjetas de los autos en el grid
     function displayCars(cars) {
         carGrid.innerHTML = '';
+        if (cars.length === 0) {
+            carGrid.innerHTML = `<p style="color: var(--color-text-secondary); grid-column: 1 / -1; text-align: center;">No se encontraron vehículos con esos criterios.</p>`;
+            return;
+        }
+
         cars.forEach(car => {
             const carCard = document.createElement('div');
             carCard.className = 'car-card';
             carCard.dataset.id = car.id;
-
+            
             carCard.innerHTML = `
                 <div class="card-image-container">
                     <img src="${car.mainImage}" alt="${car.make} ${car.model}">
@@ -69,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modal-transmission').textContent = car.transmission;
         document.getElementById('modal-color').textContent = car.color;
         document.getElementById('modal-description').textContent = car.description;
-
+        
         document.getElementById('modal-main-image').src = car.mainImage;
 
         const thumbnailsContainer = document.getElementById('modal-thumbnails');
@@ -81,17 +117,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index === 0) thumb.classList.add('active');
             thumbnailsContainer.appendChild(thumb);
         });
-
+        
         const whatsappBtn = document.getElementById('whatsapp-button');
         const message = `Hola, vi tu ${car.make} ${car.model} ${car.year} en Motor Hub y quisiera más información.`;
         whatsappBtn.href = `https://wa.me/${car.sellerPhone}?text=${encodeURIComponent(message)}`;
     }
-
+    
     // Cambiar imagen principal en la galería del modal
     document.getElementById('modal-thumbnails').addEventListener('click', (e) => {
         if (e.target.tagName === 'IMG') {
             document.getElementById('modal-main-image').src = e.target.src;
-            // Actualizar clase activa en thumbnails
             const thumbs = document.querySelectorAll('#modal-thumbnails img');
             thumbs.forEach(thumb => thumb.classList.remove('active'));
             e.target.classList.add('active');
@@ -104,32 +139,20 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.style.display = 'flex';
     });
 
-    // Cerrar el modal de detalles
-    function closeModal() {
-        modal.style.display = 'none';
-    }
-
-    // Cerrar el modal de términos
-    function closeTermsModal() {
-        termsModal.style.display = 'none';
-    }
-
-    // Cerrar el lightbox
-    function closeLightbox() {
-        lightbox.style.display = 'none';
-    }
+    // --- FUNCIONES PARA CERRAR MODALES Y LIGHTBOX ---
+    function closeModal() { modal.style.display = 'none'; }
+    function closeTermsModal() { termsModal.style.display = 'none'; }
+    function closeLightbox() { lightbox.style.display = 'none'; }
 
     closeModalBtn.addEventListener('click', closeModal);
     closeTermsBtn.addEventListener('click', closeTermsModal);
     closeLightboxBtn.addEventListener('click', closeLightbox);
-
-    // Abrir modal de términos
+    
     termsLink.addEventListener('click', (e) => {
         e.preventDefault();
         termsModal.style.display = 'flex';
     });
 
-    // Cerrar modales y lightbox al hacer clic fuera del contenido o presionar Escape
     window.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
         if (e.target === termsModal) closeTermsModal();
@@ -143,5 +166,4 @@ document.addEventListener('DOMContentLoaded', () => {
             closeLightbox();
         }
     });
-
 });
