@@ -119,7 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         const whatsappBtn = document.getElementById('whatsapp-button');
-        const message = `Hola, vi tu ${car.make} ${car.model} ${car.year} en Motor Hub y quisiera más información.`;
+        // ----- CAMBIO AQUÍ -----
+        const message = `Hola, vi tu ${car.make} ${car.model} ${car.year} en La Cochera Digital y quisiera más información.`;
         whatsappBtn.href = `https://wa.me/${car.sellerPhone}?text=${encodeURIComponent(message)}`;
     }
     
