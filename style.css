@@ -49,10 +49,12 @@ body {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
+    line-height: 1; /* Ajuste para el nombre de dos líneas */
 }
 
 .logo span {
     color: var(--color-primary);
+    display: block; /* Para que "Digital" se ponga abajo */
 }
 
 .btn {
@@ -61,6 +63,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .btn-primary {
@@ -104,6 +107,64 @@ body {
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
+
+/* --- BARRA DE FILTROS --- */
+.filter-bar {
+    background-color: var(--color-surface);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 40px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.filter-group {
+    flex: 1;
+}
+
+.filter-group.search-group {
+    flex: 3;
+}
+
+.filter-bar input[type="text"],
+.filter-bar select {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--color-background);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+.filter-bar input[type="text"]::placeholder {
+    color: var(--color-text-secondary);
+}
+
+.filter-bar select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23A0A0A0' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px;
+}
+
+.btn-secondary {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: 1px solid var(--color-primary);
+    width: 100%;
+    font-weight: 600;
+    padding: 12px;
+}
+.btn-secondary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
 
 .car-grid {
     display: grid;
@@ -236,9 +297,7 @@ body {
     gap: 30px;
 }
 
-.modal-gallery {
-    flex: 6; /* 60% */
-}
+.modal-gallery { flex: 6; }
 
 .modal-gallery .main-image {
     width: 100%;
@@ -252,7 +311,7 @@ body {
 
 .thumbnails {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     gap: 10px;
 }
 
@@ -272,17 +331,9 @@ body {
     border-color: var(--color-primary);
 }
 
-.modal-info {
-    flex: 4; /* 40% */
-}
-
+.modal-info { flex: 4; }
 .modal-info h2 { font-size: 2.2rem; }
-.modal-price {
-    font-size: 1.8rem;
-    color: var(--color-primary);
-    font-weight: 700;
-    margin: 10px 0;
-}
+.modal-price { font-size: 1.8rem; color: var(--color-primary); font-weight: 700; margin: 10px 0; }
 .modal-tags { margin-bottom: 20px; display: flex; gap: 10px; }
 .modal-tags span { background: rgba(255, 255, 255, 0.1); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; }
 .modal-info h3 { margin-top: 20px; margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px; }
@@ -292,58 +343,16 @@ body {
 .btn-whatsapp:hover { background-color: #1DAE54; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); }
 
 /* --- LIGHTBOX --- */
-.lightbox-overlay {
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.9);
-    z-index: 1100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 0.3s;
-}
-.close-lightbox {
-    position: absolute;
-    top: 30px; right: 40px;
-    color: #fff; font-size: 3rem;
-    cursor: pointer;
-}
-.lightbox-content {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-}
+.lightbox-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1100; display: flex; justify-content: center; align-items: center; animation: fadeIn 0.3s; }
+.close-lightbox { position: absolute; top: 30px; right: 40px; color: #fff; font-size: 3rem; cursor: pointer; }
+.lightbox-content { max-width: 90%; max-height: 90%; object-fit: contain; }
 
 /* --- FOOTER --- */
-.site-footer-bottom {
-    background-color: #0A0A0C;
-    padding: 30px 0;
-    margin-top: 60px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.site-footer-bottom .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-content {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    color: var(--color-text-secondary);
-}
-
-.footer-content a {
-    color: var(--color-text-secondary);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-content a:hover {
-    color: var(--color-primary);
-}
+.site-footer-bottom { background-color: #0A0A0C; padding: 30px 0; margin-top: 60px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.site-footer-bottom .container { display: flex; justify-content: space-between; align-items: center; }
+.footer-content { display: flex; gap: 20px; align-items: center; color: var(--color-text-secondary); }
+.footer-content a { color: var(--color-text-secondary); text-decoration: none; transition: color 0.3s; }
+.footer-content a:hover { color: var(--color-primary); }
 
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 992px) {
@@ -353,13 +362,23 @@ body {
 }
 
 @media (max-width: 768px) {
+    .logo { font-size: 1.5rem; }
+    .site-header .btn-primary { padding: 8px 15px; font-size: 0.9rem; }
     .hero-content h1 { font-size: 2.5rem; }
+    
+    .filter-bar {
+        flex-direction: column;
+    }
+    .filter-group {
+        width: 100%;
+    }
+
     .site-footer-bottom .container {
         flex-direction: column;
         gap: 20px;
     }
     .footer-cta {
         width: 100%;
-        text-align: center;
+        padding: 15px; /* Botón más grande en el footer móvil */
     }
 }
