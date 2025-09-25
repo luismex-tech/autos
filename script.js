@@ -1,116 +1,156 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Cochera Digital - Tu Próximo Auto en León</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">La Cochera <span>Digital</span></div>
-            <nav>
-                <a href="https://wa.me/5214776772422?text=Hola,%20quiero%20anunciar%20mi%20auto%20en%20La%20Cochera%20Digital." class="btn btn-primary" target="_blank">Anúnciate Aquí</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Tu próximo auto</h1>
-                <p>Te espera en la cochera más grande de León.</p>
-            </div>
-        </section>
-
-        <section class="catalog">
-            <div class="container">
-                <div class="filter-bar">
-                    <div class="filter-group search-group">
-                        <input type="text" id="search-input" placeholder="Buscar por marca, modelo...">
-                    </div>
-                    <div class="filter-group">
-                        <select id="condition-filter">
-                            <option value="all">Todas las condiciones</option>
-                            <option value="Nuevo">Nuevos</option>
-                            <option value="Seminuevo">Seminuevos</option>
-                            <option value="Usado">Usados</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <button id="filter-button" class="btn btn-secondary">Buscar</button>
-                    </div>
-                </div>
-                <h2>Vehículos Disponibles</h2>
-                <div id="car-grid" class="car-grid">
-                    </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer-bottom">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 La Cochera Digital. Todos los derechos reservados.</p>
-                <a href="#" id="terms-link">Términos y Condiciones</a>
-            </div>
-            <a href="https://wa.me/5214776772422?text=Hola,%20quiero%20anunciar%20mi%20auto%20en%20La%20Cochera%20Digital." class="btn btn-primary footer-cta" target="_blank">Anúnciate Aquí</a>
-        </div>
-    </footer>
-
-    <div id="details-modal" class="modal-overlay" style="display: none;">
-        <div class="modal-content">
-            <button id="close-modal" class="close-button">&times;</button>
-            <div class="modal-body">
-                <div class="modal-gallery">
-                    <img id="modal-main-image" src="" alt="Auto en venta" class="main-image">
-                    <div id="modal-thumbnails" class="thumbnails"></div>
-                </div>
-                <div class="modal-info">
-                    <h2 id="modal-title"></h2>
-                    <p class="modal-price" id="modal-price"></p>
-                    <div class="modal-tags">
-                        <span id="modal-year-condition"></span>
-                        <span id="modal-city"></span>
-                    </div>
-                    <h3>Detalles</h3>
-                    <ul class="details-list">
-                        <li><strong>Kilometraje:</strong> <span id="modal-mileage"></span></li>
-                        <li><strong>Transmisión:</strong> <span id="modal-transmission"></span></li>
-                        <li><strong>Color:</strong> <span id="modal-color"></span></li>
-                    </ul>
-                    <h3>Descripción del Vendedor</h3>
-                    <p id="modal-description"></p>
-                    <div class="contact-buttons">
-                        <a id="whatsapp-button" href="" class="btn btn-whatsapp" target="_blank">Contactar por WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+document.addEventListener('DOMContentLoaded', () => {
     
-    <div id="terms-modal" class="modal-overlay" style="display: none;">
-        <div class="modal-content modal-terms">
-             <button id="close-terms-modal" class="close-button">&times;</button>
-             <h2>Términos y Condiciones de Uso</h2>
-             <p>Bienvenido a La Cochera Digital. Al utilizar nuestros servicios, usted acepta los siguientes términos. Este sitio web funciona únicamente como un catálogo o directorio digital para la publicación de anuncios de vehículos por parte de terceros.</p>
-             <h4>Exclusión de Responsabilidad</h4>
-             <p>La Cochera Digital no es propietario de ninguno de los vehículos listados, no participa, intermedia ni forma parte de ninguna transacción entre compradores y vendedores. La veracidad de la información publicada, la calidad, seguridad, legalidad de los vehículos y la legitimidad de las transacciones son responsabilidad exclusiva del usuario que publica el anuncio y del usuario que realiza la compra.</p>
-             <p>No nos hacemos responsables por ningún tipo de daño, pérdida, fraude o disputa que pueda surgir de la comunicación o transacción entre usuarios. Recomendamos a todos los compradores realizar una debida diligencia, verificar físicamente el vehículo y su documentación antes de realizar cualquier tipo de pago. El uso de esta plataforma es bajo su propio riesgo.</p>
-        </div>
-    </div>
+    // --- ELEMENTOS DEL DOM ---
+    const carGrid = document.getElementById('car-grid');
+    const modal = document.getElementById('details-modal');
+    const closeModalBtn = document.getElementById('close-modal');
+    const termsModal = document.getElementById('terms-modal');
+    const termsLink = document.getElementById('terms-link');
+    const closeTermsBtn = document.getElementById('close-terms-modal');
+    const lightbox = document.getElementById('lightbox');
+    const closeLightboxBtn = document.getElementById('close-lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    
+    // --- ELEMENTOS DE FILTRADO ---
+    const searchInput = document.getElementById('search-input');
+    const conditionFilter = document.getElementById('condition-filter');
+    const filterButton = document.getElementById('filter-button');
 
-    <div id="lightbox" class="lightbox-overlay" style="display: none;">
-        <span id="close-lightbox" class="close-lightbox">&times;</span>
-        <img id="lightbox-image" src="" class="lightbox-content">
-    </div>
+    let allCarsData = []; // Almacenará todos los autos del JSON
 
+    // --- CARGA INICIAL DE DATOS ---
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            allCarsData = data;
+            displayCars(allCarsData); // Muestra todos los autos al principio
+        })
+        .catch(error => console.error('Error al cargar los datos de los autos:', error));
 
-    <script src="script.js"></script>
-</body>
-</html>
+    // --- FUNCIÓN PRINCIPAL PARA MOSTRAR AUTOS ---
+    function displayCars(cars) {
+        carGrid.innerHTML = ''; // Limpia el grid antes de mostrar nuevos resultados
+        if (cars.length === 0) {
+            carGrid.innerHTML = `<p class="no-results">No se encontraron vehículos con esos criterios.</p>`;
+            return;
+        }
+        cars.forEach(car => {
+            const carCard = document.createElement('div');
+            carCard.className = 'car-card';
+            carCard.dataset.id = car.id;
+            
+            carCard.innerHTML = `
+                <div class="card-image-container">
+                    <img src="${car.mainImage}" alt="${car.make} ${car.model}">
+                </div>
+                <div class="card-content">
+                    <h3>${car.make} ${car.model}</h3>
+                    <span class="year">${car.year}</span>
+                    <div class="card-tags">
+                        <span>${car.condition}</span>
+                        <span>${car.city}</span>
+                    </div>
+                </div>
+            `;
+            carGrid.appendChild(carCard);
+        });
+    }
+
+    // --- LÓGICA DE FILTRADO ---
+    function applyFilters() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const selectedCondition = conditionFilter.value;
+
+        let filteredCars = allCarsData.filter(car => {
+            const matchesSearch = car.make.toLowerCase().includes(searchTerm) || car.model.toLowerCase().includes(searchTerm);
+            const matchesCondition = selectedCondition === 'all' || car.condition === selectedCondition;
+            return matchesSearch && matchesCondition;
+        });
+        
+        displayCars(filteredCars);
+    }
+
+    // --- EVENT LISTENERS PARA FILTROS ---
+    filterButton.addEventListener('click', applyFilters);
+    searchInput.addEventListener('keyup', applyFilters); // Filtra en tiempo real al escribir
+    conditionFilter.addEventListener('change', applyFilters); // Filtra al cambiar la condición
+
+    // --- LÓGICA DE MODALES Y LIGHTBOX ---
+    carGrid.addEventListener('click', (e) => {
+        const card = e.target.closest('.car-card');
+        if (card) {
+            const carId = parseInt(card.dataset.id);
+            const carData = allCarsData.find(c => c.id === carId);
+            if (carData) {
+                populateModal(carData);
+                modal.style.display = 'flex';
+            }
+        }
+    });
+
+    function populateModal(car) {
+        document.getElementById('modal-title').textContent = `${car.make} ${car.model} ${car.version}`;
+        document.getElementById('modal-price').textContent = `$${car.price} MXN`;
+        document.getElementById('modal-year-condition').textContent = `${car.year} | ${car.condition}`;
+        document.getElementById('modal-city').textContent = `📍 ${car.city}`;
+        document.getElementById('modal-mileage').textContent = car.mileage;
+        document.getElementById('modal-transmission').textContent = car.transmission;
+        document.getElementById('modal-color').textContent = car.color;
+        document.getElementById('modal-description').textContent = car.description;
+        document.getElementById('modal-main-image').src = car.mainImage;
+
+        const thumbnailsContainer = document.getElementById('modal-thumbnails');
+        thumbnailsContainer.innerHTML = '';
+        car.galleryImages.forEach((imgSrc, index) => {
+            const thumb = document.createElement('img');
+            thumb.src = imgSrc;
+            thumb.alt = `Vista ${index + 1}`;
+            if (index === 0) thumb.classList.add('active');
+            thumbnailsContainer.appendChild(thumb);
+        });
+        
+        const whatsappBtn = document.getElementById('whatsapp-button');
+        const message = `Hola, vi tu ${car.make} ${car.model} ${car.year} en La Cochera Digital y quisiera más información.`;
+        whatsappBtn.href = `https://wa.me/${car.sellerPhone}?text=${encodeURIComponent(message)}`;
+    }
+    
+    document.getElementById('modal-thumbnails').addEventListener('click', (e) => {
+        if (e.target.tagName === 'IMG') {
+            document.getElementById('modal-main-image').src = e.target.src;
+            document.querySelectorAll('#modal-thumbnails img').forEach(thumb => thumb.classList.remove('active'));
+            e.target.classList.add('active');
+        }
+    });
+
+    document.getElementById('modal-main-image').addEventListener('click', (e) => {
+        lightboxImage.src = e.target.src;
+        lightbox.style.display = 'flex';
+    });
+
+    function closeModal() { modal.style.display = 'none'; }
+    function closeTermsModal() { termsModal.style.display = 'none'; }
+    function closeLightbox() { lightbox.style.display = 'none'; }
+
+    closeModalBtn.addEventListener('click', closeModal);
+    closeTermsBtn.addEventListener('click', closeTermsModal);
+    closeLightboxBtn.addEventListener('click', closeLightbox);
+    
+    termsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        termsModal.style.display = 'flex';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+        if (e.target === termsModal) closeTermsModal();
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeModal();
+            closeTermsModal();
+            closeLightbox();
+        }
+    });
+});
