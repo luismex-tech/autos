@@ -61,7 +61,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    white-space: nowrap; /* CORRECCIÓN: Evita que el texto del botón se divida */
 }
 
 .btn-primary {
@@ -355,7 +354,6 @@ body {
 
 @media (max-width: 768px) {
     .hero-content h1 { font-size: 2.5rem; }
-
     .site-footer-bottom .container {
         flex-direction: column;
         gap: 20px;
@@ -364,15 +362,4 @@ body {
         width: 100%;
         text-align: center;
     }
-
-    /* === CORRECCIÓN PARA HEADER EN MÓVIL === */
-    .logo {
-        font-size: 1.4rem; /* Reducir tamaño del logo para dar espacio */
-    }
-    
-    .site-header .btn {
-        padding: 8px 15px; /* Reducir el padding del botón en el header */
-        font-size: 0.9rem; /* Reducir la fuente del botón en el header */
-    }
-    /* === FIN DE LA CORRECCIÓN === */
 }
