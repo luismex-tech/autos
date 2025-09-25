@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaCocheraDigital</title>
+    <title>La Cochera Digital - Tu Próximo Auto en León</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,9 @@
 
     <header class="site-header">
         <div class="container">
-            <div class="logo">LaCocheraDigital <span>2025</span></div>
+            <div class="logo">La Cochera <span>Digital</span></div>
             <nav>
-                <a href="https://wa.me/5214776772422?text=Hola,%20quiero%20anunciar%20mi%20auto%20en%20Motor%20Hub." class="btn btn-primary" target="_blank">Anúnciate Aquí</a>
+                <a href="https://wa.me/5214776772422?text=Hola,%20quiero%20anunciar%20mi%20auto%20en%20La%20Cochera%20Digital." class="btn btn-primary" target="_blank">Anúnciate Aquí</a>
             </nav>
         </div>
     </header>
@@ -23,14 +23,30 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Encuentra tu próximo auto</h1>
-                <p>El catálogo digital más moderno e innovador.</p>
+                <h1>Tu próximo auto</h1>
+                <p>Te espera en la cochera más grande de León.</p>
             </div>
         </section>
 
         <section class="catalog">
             <div class="container">
-                <h2>Vehículos Destacados</h2>
+                <div class="filter-bar">
+                    <div class="filter-group search-group">
+                        <input type="text" id="search-input" placeholder="Buscar por marca, modelo...">
+                    </div>
+                    <div class="filter-group">
+                        <select id="condition-filter">
+                            <option value="all">Todas las condiciones</option>
+                            <option value="Nuevo">Nuevos</option>
+                            <option value="Seminuevo">Seminuevos</option>
+                            <option value="Usado">Usados</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button id="filter-button" class="btn btn-secondary">Buscar</button>
+                    </div>
+                </div>
+                <h2>Vehículos Disponibles</h2>
                 <div id="car-grid" class="car-grid">
                     </div>
             </div>
@@ -40,10 +56,10 @@
     <footer class="site-footer-bottom">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 LaCocheraDigital. Todos los derechos reservados.</p>
+                <p>&copy; 2025 La Cochera Digital. Todos los derechos reservados.</p>
                 <a href="#" id="terms-link">Términos y Condiciones</a>
             </div>
-            <a href="https://wa.me/5214776772422?text=Hola,%20quiero%20anunciar%20mi%20auto%20en%20Motor%20Hub." class="btn btn-primary footer-cta" target="_blank">Anúnciate Aquí</a>
+            <a href="https://wa.me/5214776772422?text=Hola,%20quiero%20anunciar%20mi%20auto%20en%20La%20Cochera%20Digital." class="btn btn-primary footer-cta" target="_blank">Anúnciate Aquí</a>
         </div>
     </footer>
 
@@ -53,8 +69,7 @@
             <div class="modal-body">
                 <div class="modal-gallery">
                     <img id="modal-main-image" src="" alt="Auto en venta" class="main-image">
-                    <div id="modal-thumbnails" class="thumbnails">
-                        </div>
+                    <div id="modal-thumbnails" class="thumbnails"></div>
                 </div>
                 <div class="modal-info">
                     <h2 id="modal-title"></h2>
@@ -83,9 +98,9 @@
         <div class="modal-content modal-terms">
              <button id="close-terms-modal" class="close-button">&times;</button>
              <h2>Términos y Condiciones de Uso</h2>
-             <p>Bienvenido a LaCocheraDigital 2025. Al utilizar nuestros servicios, usted acepta los siguientes términos. Este sitio web funciona únicamente como un catálogo o directorio digital para la publicación de anuncios de vehículos por parte de terceros.</p>
+             <p>Bienvenido a La Cochera Digital. Al utilizar nuestros servicios, usted acepta los siguientes términos. Este sitio web funciona únicamente como un catálogo o directorio digital para la publicación de anuncios de vehículos por parte de terceros.</p>
              <h4>Exclusión de Responsabilidad</h4>
-             <p>LaCocheraDigital 2025 no es propietario de ninguno de los vehículos listados, no participa, intermedia ni forma parte de ninguna transacción entre compradores y vendedores. La veracidad de la información publicada, la calidad, seguridad, legalidad de los vehículos y la legitimidad de las transacciones son responsabilidad exclusiva del usuario que publica el anuncio y del usuario que realiza la compra.</p>
+             <p>La Cochera Digital no es propietario de ninguno de los vehículos listados, no participa, intermedia ni forma parte de ninguna transacción entre compradores y vendedores. La veracidad de la información publicada, la calidad, seguridad, legalidad de los vehículos y la legitimidad de las transacciones son responsabilidad exclusiva del usuario que publica el anuncio y del usuario que realiza la compra.</p>
              <p>No nos hacemos responsables por ningún tipo de daño, pérdida, fraude o disputa que pueda surgir de la comunicación o transacción entre usuarios. Recomendamos a todos los compradores realizar una debida diligencia, verificar físicamente el vehículo y su documentación antes de realizar cualquier tipo de pago. El uso de esta plataforma es bajo su propio riesgo.</p>
         </div>
     </div>
