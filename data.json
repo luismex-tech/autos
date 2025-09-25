@@ -18,7 +18,8 @@
       "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://images.pexels.com/photos/1707213/pexels-photo-1707213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://images.pexels.com/photos/68710/pexels-photo-68710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -29,16 +30,18 @@
     "year": 2023,
     "price": "1,680,000",
     "condition": "Nuevo",
-    "city": "Guadalajara, JAL",
+    "city": "León, GTO",
     "mileage": "0 km",
     "transmission": "Automática",
     "color": "Rojo Fuego",
     "description": "Totalmente nuevo, listo para la aventura. Capacidad 4x4 legendaria con la eficiencia de un motor híbrido enchufable. Toldo removible, pantalla de 12 pulgadas.",
     "sellerPhone": "5213339876543",
-    "mainImage": "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "mainImage": "https://images.pexels.com/photos/2530912/pexels-photo-2530912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
-      "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/2530912/pexels-photo-2530912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/2155556/pexels-photo-2155556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/11195244/pexels-photo-11195244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
@@ -50,7 +53,7 @@
     "year": 2022,
     "price": "890,000",
     "condition": "Usado",
-    "city": "Monterrey, NL",
+    "city": "León, GTO",
     "mileage": "25,000 km",
     "transmission": "Automática",
     "color": "Blanco Perlado",
@@ -59,7 +62,10 @@
     "mainImage": "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/5069417/pexels-photo-5069417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/5069417/pexels-photo-5069417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/9735071/pexels-photo-9735071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/14899371/pexels-photo-14899371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1368388/pexels-photo-1368388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -70,7 +76,7 @@
     "year": 2023,
     "price": "1,450,000",
     "condition": "Seminuevo",
-    "city": "Querétaro, QRO",
+    "city": "León, GTO",
     "mileage": "12,000 km",
     "transmission": "Automática",
     "color": "Negro Ocaso",
@@ -79,7 +85,10 @@
     "mainImage": "https://images.pexels.com/photos/17589578/pexels-photo-17589578/free-photo-of-ford-f-150-raptor-en-el-desierto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/17589578/pexels-photo-17589578/free-photo-of-ford-f-150-raptor-en-el-desierto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/7126149/pexels-photo-7126149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/7126149/pexels-photo-7126149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/17589574/pexels-photo-17589574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/17589577/pexels-photo-17589577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/7126154/pexels-photo-7126154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -90,7 +99,7 @@
     "year": 2022,
     "price": "310,000",
     "condition": "Usado",
-    "city": "CDMX",
+    "city": "León, GTO",
     "mileage": "35,000 km",
     "transmission": "Automática",
     "color": "Plata",
@@ -99,7 +108,10 @@
     "mainImage": "https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/18399187/pexels-photo-18399187/free-photo-of-volante.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/18399187/pexels-photo-18399187/free-photo-of-volante.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/13861/IMG_3496-small.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/164654/pexels-photo-164654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/162520/pexels-photo-162520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -110,7 +122,7 @@
     "year": 2021,
     "price": "480,000",
     "condition": "Usado",
-    "city": "Puebla, PUE",
+    "city": "León, GTO",
     "mileage": "40,000 km",
     "transmission": "Automática",
     "color": "Blanco Puro",
@@ -119,7 +131,10 @@
     "mainImage": "https://images.pexels.com/photos/1637785/pexels-photo-1637785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/1637785/pexels-photo-1637785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/18412496/pexels-photo-18412496/free-photo-of-volante-de-un-volkswagen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/18412496/pexels-photo-18412496/free-photo-of-volante-de-un-volkswagen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1637784/pexels-photo-1637784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -130,7 +145,7 @@
     "year": 2023,
     "price": "750,000",
     "condition": "Seminuevo",
-    "city": "Mérida, YUC",
+    "city": "León, GTO",
     "mileage": "9,000 km",
     "transmission": "Automática",
     "color": "Azul Cósmico",
@@ -139,7 +154,10 @@
     "mainImage": "https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/11050550/pexels-photo-11050550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/11050550/pexels-photo-11050550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/2659180/pexels-photo-2659180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/6389334/pexels-photo-6389334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/193991/pexels-photo-193991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -150,7 +168,7 @@
     "year": 2022,
     "price": "920,000",
     "condition": "Seminuevo",
-    "city": "Monterrey, NL",
+    "city": "León, GTO",
     "mileage": "18,000 km",
     "transmission": "Automática",
     "color": "Azul Portimao",
@@ -159,7 +177,10 @@
     "mainImage": "https://images.pexels.com/photos/15984635/pexels-photo-15984635/free-photo-of-bmw-m4-azul-en-la-carretera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/15984635/pexels-photo-15984635/free-photo-of-bmw-m4-azul-en-la-carretera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/4067965/pexels-photo-4067965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/4067965/pexels-photo-4067965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -170,7 +191,7 @@
     "year": 2024,
     "price": "495,000",
     "condition": "Nuevo",
-    "city": "Guadalajara, JAL",
+    "city": "León, GTO",
     "mileage": "50 km",
     "transmission": "Automática",
     "color": "Gris Acero",
@@ -179,7 +200,10 @@
     "mainImage": "https://images.pexels.com/photos/12537233/pexels-photo-12537233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/12537233/pexels-photo-12537233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/12537234/pexels-photo-12537234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/12537234/pexels-photo-12537234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/11050550/pexels-photo-11050550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3354648/pexels-photo-3354648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/457418/pexels-photo-457418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -190,7 +214,7 @@
     "year": 2023,
     "price": "1,150,000",
     "condition": "Seminuevo",
-    "city": "CDMX",
+    "city": "León, GTO",
     "mileage": "7,500 km",
     "transmission": "Automática",
     "color": "Plata Iridio",
@@ -199,7 +223,10 @@
     "mainImage": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/2127740/pexels-photo-2127740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/2127740/pexels-photo-2127740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/627678/pexels-photo-627678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -219,7 +246,10 @@
     "mainImage": "https://images.pexels.com/photos/358189/pexels-photo-358189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/358189/pexels-photo-358189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/4323326/pexels-photo-4323326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/951318/pexels-photo-951318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -230,7 +260,7 @@
     "year": 2022,
     "price": "560,000",
     "condition": "Usado",
-    "city": "Guadalajara, JAL",
+    "city": "León, GTO",
     "mileage": "30,000 km",
     "transmission": "Automática",
     "color": "Rojo Brillante",
@@ -239,7 +269,10 @@
     "mainImage": "https://images.pexels.com/photos/3757956/pexels-photo-3757956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/3757956/pexels-photo-3757956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/3757955/pexels-photo-3757955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/3757955/pexels-photo-3757955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1807255/pexels-photo-1807255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -250,7 +283,7 @@
     "year": 2023,
     "price": "3,100,000",
     "condition": "Seminuevo",
-    "city": "CDMX",
+    "city": "León, GTO",
     "mileage": "4,000 km",
     "transmission": "Automática (PDK)",
     "color": "Amarillo Racing",
@@ -260,7 +293,9 @@
     "galleryImages": [
       "https://images.pexels.com/photos/12338161/pexels-photo-12338161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://images.pexels.com/photos/16590509/pexels-photo-16590509/free-photo-of-volante-de-un-porsche.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/6305611/pexels-photo-6305611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/6305611/pexels-photo-6305611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/37716/pexels-photo-37716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -271,7 +306,7 @@
     "year": 2022,
     "price": "1,350,000",
     "condition": "Usado",
-    "city": "Monterrey, NL",
+    "city": "León, GTO",
     "mileage": "32,000 km",
     "transmission": "Automática",
     "color": "Azul Eléctrico",
@@ -280,7 +315,10 @@
     "mainImage": "https://images.pexels.com/photos/16290847/pexels-photo-16290847/free-photo-of-chevrolet-silverado-trailboss-negro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/16290847/pexels-photo-16290847/free-photo-of-chevrolet-silverado-trailboss-negro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/16290848/pexels-photo-16290848/free-photo-of-asientos-de-coche-de-cuero.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/16290848/pexels-photo-16290848/free-photo-of-asientos-de-coche-de-cuero.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/8982424/pexels-photo-8982424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/12836279/pexels-photo-12836279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/7126153/pexels-photo-7126153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -291,7 +329,7 @@
     "year": 2021,
     "price": "620,000",
     "condition": "Usado",
-    "city": "Querétaro, QRO",
+    "city": "León, GTO",
     "mileage": "45,000 km",
     "transmission": "Automática",
     "color": "Gris Oxford",
@@ -300,7 +338,10 @@
     "mainImage": "https://images.pexels.com/photos/14742301/pexels-photo-14742301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/14742301/pexels-photo-14742301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/6389334/pexels-photo-6389334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/6389334/pexels-photo-6389334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/208763/pexels-photo-208763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1579708/pexels-photo-1579708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -311,7 +352,7 @@
     "year": 2023,
     "price": "360,000",
     "condition": "Seminuevo",
-    "city": "Puebla, PUE",
+    "city": "León, GTO",
     "mileage": "15,000 km",
     "transmission": "Automática",
     "color": "Blanco",
@@ -319,7 +360,11 @@
     "sellerPhone": "5212226665544",
     "mainImage": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
-      "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/12537234/pexels-photo-12537234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/457418/pexels-photo-457418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/11050550/pexels-photo-11050550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3354648/pexels-photo-3354648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -330,7 +375,7 @@
     "year": 2021,
     "price": "950,000",
     "condition": "Usado",
-    "city": "CDMX",
+    "city": "León, GTO",
     "mileage": "38,000 km",
     "transmission": "Automática",
     "color": "Negro Mito",
@@ -339,7 +384,10 @@
     "mainImage": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -350,7 +398,7 @@
     "year": 2023,
     "price": "1,100,000",
     "condition": "Seminuevo",
-    "city": "Monterrey, NL",
+    "city": "León, GTO",
     "mileage": "11,000 km",
     "transmission": "Automática",
     "color": "Gris Medianoche",
@@ -359,7 +407,10 @@
     "mainImage": "https://images.pexels.com/photos/9735154/pexels-photo-9735154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/9735154/pexels-photo-9735154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/9735071/pexels-photo-9735071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/9735071/pexels-photo-9735071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/14899371/pexels-photo-14899371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1368388/pexels-photo-1368388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -370,7 +421,7 @@
     "year": 2020,
     "price": "820,000",
     "condition": "Usado",
-    "city": "Guadalajara, JAL",
+    "city": "León, GTO",
     "mileage": "50,000 km",
     "transmission": "Automática",
     "color": "Blanco Brillante",
@@ -379,7 +430,10 @@
     "mainImage": "https://images.pexels.com/photos/11195260/pexels-photo-11195260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/11195260/pexels-photo-11195260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/11195244/pexels-photo-11195244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/11195244/pexels-photo-11195244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/2155556/pexels-photo-2155556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -398,7 +452,11 @@
     "sellerPhone": "5214772223344",
     "mainImage": "https://images.pexels.com/photos/12975971/pexels-photo-12975971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
-      "https://images.pexels.com/photos/12975971/pexels-photo-12975971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/12975971/pexels-photo-12975971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1579708/pexels-photo-1579708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/14742301/pexels-photo-14742301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/6389334/pexels-photo-6389334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -409,7 +467,7 @@
     "year": 2023,
     "price": "530,000",
     "condition": "Seminuevo",
-    "city": "Querétaro, QRO",
+    "city": "León, GTO",
     "mileage": "8,000 km",
     "transmission": "Automática",
     "color": "Verde Jungla",
@@ -417,7 +475,11 @@
     "sellerPhone": "5214424445566",
     "mainImage": "https://images.pexels.com/photos/5445214/pexels-photo-5445214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
-      "https://images.pexels.com/photos/5445214/pexels-photo-5445214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/5445214/pexels-photo-5445214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/10636402/pexels-photo-10636402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/10636400/pexels-photo-10636400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/10636401/pexels-photo-10636401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/5214413/pexels-photo-5214413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -428,7 +490,7 @@
     "year": 2022,
     "price": "1,100,000",
     "condition": "Usado",
-    "city": "CDMX",
+    "city": "León, GTO",
     "mileage": "29,000 km",
     "transmission": "Automática",
     "color": "Gris Granito",
@@ -436,7 +498,11 @@
     "sellerPhone": "5215566778899",
     "mainImage": "https://images.pexels.com/photos/8982424/pexels-photo-8982424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
-      "https://images.pexels.com/photos/8982424/pexels-photo-8982424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/8982424/pexels-photo-8982424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/16290847/pexels-photo-16290847/free-photo-of-chevrolet-silverado-trailboss-negro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/16290848/pexels-photo-16290848/free-photo-of-asientos-de-coche-de-cuero.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/12836279/pexels-photo-12836279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/7126153/pexels-photo-7126153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   },
   {
@@ -456,7 +522,10 @@
     "mainImage": "https://images.pexels.com/photos/15620579/pexels-photo-15620579/free-photo-of-cupra-formentor-vzz-en-la-carretera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "galleryImages": [
       "https://images.pexels.com/photos/15620579/pexels-photo-15620579/free-photo-of-cupra-formentor-vzz-en-la-carretera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/15620575/pexels-photo-15620575/free-photo-of-volante-de-un-cupra-formentor-vz5.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "https://images.pexels.com/photos/15620575/pexels-photo-15620575/free-photo-of-volante-de-un-cupra-formentor-vz5.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/18418241/pexels-photo-18418241/free-photo-of-asientos-de-un-cupra-formentor-vz5.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/18418239/pexels-photo-18418239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/18418238/pexels-photo-18418238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ]
   }
 ]
