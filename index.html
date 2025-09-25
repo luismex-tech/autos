@@ -3,116 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Cochera Digital - Tu Próximo Auto en León</title>
+    <title>Cochera Digital - Clasificados de Autos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="site-header">
+    <header class="main-header">
         <div class="container">
-            <div class="logo">La Cochera <span>Digital</span></div>
-            <nav>
-                <a href="https://wa.me/5214776772422?text=Hola,%20quiero%20anunciar%20mi%20auto%20en%20La%20Cochera%20Digital." class="btn btn-primary" target="_blank">Anúnciate Aquí</a>
-            </nav>
+            <h1 class="logo">Cochera Digital</h1>
+            <a href="https://wa.me/4776772422?text=Hola,%20estoy%20interesado%20en%20anunciar%20mi%20auto%20en%20Cochera%20Digital." class="btn-announce" target="_blank">Anúnciate Aquí</a>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Tu próximo auto</h1>
-                <p>Te espera en la cochera más grande de León.</p>
+    <main class="container">
+        <section class="search-filter-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar por marca o modelo...">
+            </div>
+            <div class="filter-bar">
+                <select id="conditionFilter">
+                    <option value="todos">Todos los estados</option>
+                    <option value="Nuevo">Nuevo</option>
+                    <option value="Seminuevo">Seminuevo</option>
+                    <option value="Usado">Usado</option>
+                </select>
             </div>
         </section>
 
-        <section class="catalog">
-            <div class="container">
-                <div class="filter-bar">
-                    <div class="filter-group search-group">
-                        <input type="text" id="search-input" placeholder="Buscar por marca, modelo...">
-                    </div>
-                    <div class="filter-group">
-                        <select id="condition-filter">
-                            <option value="all">Todas las condiciones</option>
-                            <option value="Nuevo">Nuevos</option>
-                            <option value="Seminuevo">Seminuevos</option>
-                            <option value="Usado">Usados</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <button id="filter-button" class="btn btn-secondary">Buscar</button>
-                    </div>
-                </div>
-                <h2>Vehículos Disponibles</h2>
-                <div id="car-grid" class="car-grid">
-                    </div>
-            </div>
-        </section>
+        <section id="car-listings" class="car-grid">
+            </section>
     </main>
 
-    <footer class="site-footer-bottom">
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 La Cochera Digital. Todos los derechos reservados.</p>
-                <a href="#" id="terms-link">Términos y Condiciones</a>
+            <a href="https://wa.me/4776772422?text=Hola,%20estoy%20interesado%20en%20anunciar%20mi%20auto%20en%20Cochera%20Digital." class="btn-announce" target="_blank">Anúnciate Aquí</a>
+            <div class="footer-info">
+                <p>&copy; 2025 Cochera Digital. Todos los derechos reservados.</p>
+                <p class="terms">
+                    <strong>Términos y Condiciones:</strong> Cochera Digital es únicamente una plataforma de directorio y catálogo. No intermediamos, participamos, ni nos responsabilizamos por las transacciones, acuerdos o desacuerdos entre los vendedores y compradores. Toda la responsabilidad de la negociación, compra, venta y estado del vehículo recae exclusivamente sobre el usuario que publica y el usuario que compra.
+                </p>
             </div>
-            <a href="https://wa.me/5214776772422?text=Hola,%20quiero%20anunciar%20mi%20auto%20en%20La%20Cochera%20Digital." class="btn btn-primary footer-cta" target="_blank">Anúnciate Aquí</a>
         </div>
     </footer>
 
-    <div id="details-modal" class="modal-overlay" style="display: none;">
+    <div id="carModal" class="modal">
         <div class="modal-content">
-            <button id="close-modal" class="close-button">&times;</button>
-            <div class="modal-body">
-                <div class="modal-gallery">
-                    <img id="modal-main-image" src="" alt="Auto en venta" class="main-image">
-                    <div id="modal-thumbnails" class="thumbnails"></div>
+            <div id="modal-gallery" class="modal-gallery">
                 </div>
-                <div class="modal-info">
-                    <h2 id="modal-title"></h2>
-                    <p class="modal-price" id="modal-price"></p>
-                    <div class="modal-tags">
-                        <span id="modal-year-condition"></span>
-                        <span id="modal-city"></span>
-                    </div>
-                    <h3>Detalles</h3>
-                    <ul class="details-list">
-                        <li><strong>Kilometraje:</strong> <span id="modal-mileage"></span></li>
-                        <li><strong>Transmisión:</strong> <span id="modal-transmission"></span></li>
-                        <li><strong>Color:</strong> <span id="modal-color"></span></li>
-                    </ul>
-                    <h3>Descripción del Vendedor</h3>
-                    <p id="modal-description"></p>
-                    <div class="contact-buttons">
-    <button id="modal-back-button" class="btn btn-outline">Regresar</button>
-    <a id="whatsapp-button" href="" class="btn btn-whatsapp" target="_blank">Contactar por WhatsApp</a>
-</div>
-                </div>
+            <div class="modal-details">
+                <h2 id="modal-title"></h2>
+                <p><strong>Año:</strong> <span id="modal-year"></span></p>
+                <p><strong>Condición:</strong> <span id="modal-condition"></span></p>
+                <p><strong>Ciudad:</strong> <span id="modal-city"></span></p>
+                <p><strong>Detalles:</strong></p>
+                <p id="modal-details-text"></p>
+                <p class="contact-number"><strong>Contacto:</strong> <span id="modal-contact"></span></p>
+                <a id="modal-whatsapp" href="#" class="btn-whatsapp" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.902-.539-5.625-1.527l-6.262 1.664zm7.986-2.923c1.636.936 3.497 1.438 5.433 1.438 5.429 0 9.875-4.446 9.876-9.875.001-2.65-1.01-5.14-2.846-6.977-1.835-1.837-4.327-2.847-6.976-2.848-5.429 0-9.875 4.446-9.875 9.875 0 1.99.574 3.903 1.603 5.624l.176.308-1.043 3.823 3.927-1.038.314.188z"/></svg>
+                    Contactar por WhatsApp
+                </a>
+                <button id="closeModal" class="btn-back">Regresar</button>
             </div>
         </div>
     </div>
-    
-    <div id="terms-modal" class="modal-overlay" style="display: none;">
-        <div class="modal-content modal-terms">
-             <button id="close-terms-modal" class="close-button">&times;</button>
-             <h2>Términos y Condiciones de Uso</h2>
-             <p>Bienvenido a La Cochera Digital. Al utilizar nuestros servicios, usted acepta los siguientes términos. Este sitio web funciona únicamente como un catálogo o directorio digital para la publicación de anuncios de vehículos por parte de terceros.</p>
-             <h4>Exclusión de Responsabilidad</h4>
-             <p>La Cochera Digital no es propietario de ninguno de los vehículos listados, no participa, intermedia ni forma parte de ninguna transacción entre compradores y vendedores. La veracidad de la información publicada, la calidad, seguridad, legalidad de los vehículos y la legitimidad de las transacciones son responsabilidad exclusiva del usuario que publica el anuncio y del usuario que realiza la compra.</p>
-             <p>No nos hacemos responsables por ningún tipo de daño, pérdida, fraude o disputa que pueda surgir de la comunicación o transacción entre usuarios. Recomendamos a todos los compradores realizar una debida diligencia, verificar físicamente el vehículo y su documentación antes de realizar cualquier tipo de pago. El uso de esta plataforma es bajo su propio riesgo.</p>
-        </div>
-    </div>
 
-    <div id="lightbox" class="lightbox-overlay" style="display: none;">
-        <span id="close-lightbox" class="close-lightbox">&times;</span>
-        <img id="lightbox-image" src="" class="lightbox-content">
-    </div>
-
-
+    <script src="cars.json"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
-
