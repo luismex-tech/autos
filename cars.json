@@ -1,23 +1,5 @@
 [
   {
-    "id": 1,
-    "make": "Nissan",
-    "model": "Versa",
-    "year": 2023,
-    "condition": "Seminuevo",
-    "city": "León, Guanajuato",
-    "contact": "478977123456756",
-    "details": "Excelentes condiciones, único dueño, 15,000 km. Todos los servicios de agencia. Versión equipada con pantalla táctil y cámara de reversa.",
-    "mainImage": "https://www.nissanseminuevos.com.mx/inventoryphotos/9632/3n1cn8ae3ll814919/ip/1.jpg?timestamp=2022-09-11T04:00:12Z&bg-color=FFFFFF&width=1200",
-    "galleryImages": [
-      "https://www.nissanseminuevos.com.mx/inventoryphotos/9632/3n1cn8ae3ll814919/ip/2.jpg?timestamp=2022-09-11T04:00:12Z&bg-color=FFFFFF&width=1200",
-      "https://www.nissanseminuevos.com.mx/inventoryphotos/9632/3n1cn8ae3ll814919/ip/3.jpg?timestamp=2022-09-11T04:00:12Z&bg-color=FFFFFF&width=1200",
-      "https://www.nissanseminuevos.com.mx/inventoryphotos/9632/3n1cn8ae3ll814919/ip/4.jpg?timestamp=2022-09-11T04:00:12Z&bg-color=FFFFFF&width=1200",
-      "https://www.nissanseminuevos.com.mx/inventoryphotos/9632/3n1cn8ae3ll814919/ip/5.jpg?timestamp=2022-09-11T04:00:12Z&bg-color=FFFFFF&width=1200",
-      "https://www.nissanseminuevos.com.mx/inventoryphotos/9632/3n1cn8ae3ll814919/ip/6.jpg?timestamp=2022-09-11T04:00:12Z&bg-color=FFFFFF&width=1200"
-    ]
-  },
-  {
     "id": 2,
     "make": "Volkswagen",
     "model": "Jetta",
@@ -26,14 +8,238 @@
     "city": "Silao, Guanajuato",
     "contact": "4772345678",
     "details": "Totalmente nuevo, 0 kilómetros. Garantía de planta. Motor 1.4L Turbo. Disponible para entrega inmediata.",
-    "mainImage": "https://http2.mlstatic.com/D_NQ_NP_899347-MLM92615899761_092025-O-volkswagen-jetta-2023.webp",
+    "mainImage": "https://i.postimg.cc/VvFzjwR7/vw-jetta-main.jpg",
     "galleryImages": [
-      "https://http2.mlstatic.com/D_NQ_NP_2X_657291-MLM92615899767_092025-F-volkswagen-jetta-2023.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_2X_671540-MLM92615899753_092025-F-volkswagen-jetta-2023.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_2X_984549-MLM92615899759_092025-F-volkswagen-jetta-2023.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_2X_964416-MLM92615899745_092025-F-volkswagen-jetta-2023.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_2X_732059-MLM92615899757_092025-F-volkswagen-jetta-2023.webp"
-    ]
+      "https://i.postimg.cc/VvFzjwR7/vw-jetta-main.jpg",
+      "https://i.postimg.cc/fLsZzKzC/vw-jetta-2.jpg",
+      "https://i.postimg.cc/L5nQfJv4/vw-jetta-3.jpg",
+      "https://i.postimg.cc/cLDb1Gf5/vw-jetta-4.jpg",
+      "https://i.postimg.cc/j5P6vQp5/vw-jetta-5.jpg"
+    ],
+    "isPremium": true,
+    "videoUrl": "https://www.youtube.com/watch?v=Sa_pgg351dE"
+  },
+  {
+    "id": 4,
+    "make": "Honda",
+    "model": "CR-V",
+    "year": 2022,
+    "condition": "Seminuevo",
+    "city": "León, Guanajuato",
+    "contact": "4774567890",
+    "details": "Impecable, como nueva. Versión Touring, la más equipada. Asientos de piel, quemacocos, 25,000 km. Servicios al día.",
+    "mainImage": "https://i.postimg.cc/Pq53MvYd/honda-crv-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/Pq53MvYd/honda-crv-main.jpg",
+      "https://i.postimg.cc/t4d5n2Hh/honda-crv-2.jpg",
+      "https://i.postimg.cc/rpqK5XyT/honda-crv-3.jpg",
+      "https://i.postimg.cc/pr0xJ5Y5/honda-crv-4.jpg",
+      "https://i.postimg.cc/Hn1b3f9x/honda-crv-5.jpg"
+    ],
+    "isPremium": true,
+    "videoUrl": "https://www.youtube.com/watch?v=V031bKORtFk"
+  },
+  {
+    "id": 1,
+    "make": "Nissan",
+    "model": "Versa",
+    "year": 2023,
+    "condition": "Seminuevo",
+    "city": "León, Guanajuato",
+    "contact": "4771234567",
+    "details": "Excelentes condiciones, único dueño, 15,000 km. Todos los servicios de agencia. Versión equipada con pantalla táctil y cámara de reversa.",
+    "mainImage": "https://i.postimg.cc/qR0y2YJj/nissan-versa-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/qR0y2YJj/nissan-versa-main.jpg",
+      "https://i.postimg.cc/8cR8XzYy/nissan-versa-2.jpg",
+      "https://i.postimg.cc/C1vWzJjJ/nissan-versa-3.jpg",
+      "https://i.postimg.cc/k47Z1HxB/nissan-versa-4.jpg",
+      "https://i.postimg.cc/T3Y9f5K1/nissan-versa-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  },
+  {
+    "id": 3,
+    "make": "Chevrolet",
+    "model": "Aveo",
+    "year": 2020,
+    "condition": "Usado",
+    "city": "Irapuato, Guanajuato",
+    "contact": "4773456789",
+    "details": "Buen estado general, factura original, 80,000 km. Llantas media vida. Pequeños detalles de uso normal en pintura. Aire acondicionado funcionando.",
+    "mainImage": "https://i.postimg.cc/G3xXyZ0R/chevrolet-aveo-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/G3xXyZ0R/chevrolet-aveo-main.jpg",
+      "https://i.postimg.cc/7LYB4FqG/chevrolet-aveo-2.jpg",
+      "https://i.postimg.cc/KzP6M6F0/chevrolet-aveo-3.jpg",
+      "https://i.postimg.cc/yd8W18pQ/chevrolet-aveo-4.jpg",
+      "https://i.postimg.cc/tJnQy0G1/chevrolet-aveo-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  },
+  {
+    "id": 5,
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": 2024,
+    "condition": "Nuevo",
+    "city": "Celaya, Guanajuato",
+    "contact": "4775678901",
+    "details": "Versión XLE. Nueva de agencia, sin rodar. Se factura a tu nombre. Garantía completa. Color plata.",
+    "mainImage": "https://i.postimg.cc/GhzS0xP3/toyota-rav4-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/GhzS0xP3/toyota-rav4-main.jpg",
+      "https://i.postimg.cc/sXqH8mK3/toyota-rav4-2.jpg",
+      "https://i.postimg.cc/26L0V2mB/toyota-rav4-3.jpg",
+      "https://i.postimg.cc/GppdG8tP/toyota-rav4-4.jpg",
+      "https://i.postimg.cc/d08qV9p1/toyota-rav4-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  },
+  {
+    "id": 6,
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2018,
+    "condition": "Usado",
+    "city": "Salamanca, Guanajuato",
+    "contact": "4776789012",
+    "details": "Versión GT V8, 5.0L. Excelentes condiciones mecánicas. Llantas nuevas. Filtro de alto flujo. 60,000 km.",
+    "mainImage": "https://i.postimg.cc/pT3VfXzT/ford-mustang-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/pT3VfXzT/ford-mustang-main.jpg",
+      "https://i.postimg.cc/Y0G3R07j/ford-mustang-2.jpg",
+      "https://i.postimg.cc/W1D6XbJj/ford-mustang-3.jpg",
+      "https://i.postimg.cc/Dyd83k4G/ford-mustang-4.jpg",
+      "https://i.postimg.cc/yd3yS0Y4/ford-mustang-5.jpg"
+    ],
+    "isPremium": true,
+    "videoUrl": "https://www.youtube.com/watch?v=0g7_22HeFNE"
+  },
+  {
+    "id": 7,
+    "make": "Mazda",
+    "model": "3",
+    "year": 2021,
+    "condition": "Seminuevo",
+    "city": "León, Guanajuato",
+    "contact": "4777890123",
+    "details": "Versión i Grand Touring. 40,000 km. Único dueño. Piel, quemacocos, sonido Bose. Factura original.",
+    "mainImage": "https://i.postimg.cc/NjjXyZ7r/mazda-3-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/NjjXyZ7r/mazda-3-main.jpg",
+      "https://i.postimg.cc/prg6YV8G/mazda-3-2.jpg",
+      "https://i.postimg.cc/G2q7vWwX/mazda-3-3.jpg",
+      "https://i.postimg.cc/WbFfS9h4/mazda-3-4.jpg",
+      "https://i.postimg.cc/Wz7S3Wv8/mazda-3-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  },
+  {
+    "id": 8,
+    "make": "KIA",
+    "model": "Rio",
+    "year": 2022,
+    "condition": "Seminuevo",
+    "city": "Guanajuato, Guanajuato",
+    "contact": "4778901234",
+    "details": "Sedán, versión EX. Transmisión automática. 30,000 km. Garantía de agencia vigente. Como nuevo.",
+    "mainImage": "https://i.postimg.cc/L5n5Qf2p/kia-rio-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/L5n5Qf2p/kia-rio-main.jpg",
+      "https://i.postimg.cc/KjPzC8Jb/kia-rio-2.jpg",
+      "https://i.postimg.cc/wMPM6nC4/kia-rio-3.jpg",
+      "https://i.postimg.cc/0j7hP4rV/kia-rio-4.jpg",
+      "https://i.postimg.cc/pLQvY2S7/kia-rio-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  },
+  {
+    "id": 9,
+    "make": "BMW",
+    "model": "Serie 3",
+    "year": 2020,
+    "condition": "Usado",
+    "city": "San Miguel de Allende, Gto.",
+    "contact": "4779012345",
+    "details": "Modelo 330i Sport Line. Motor 2.0L TwinPower Turbo. 55,000 km. Llantas run-flat. Impecable, sin detalles.",
+    "mainImage": "https://i.postimg.cc/W3tYh2wW/bmw-3series-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/W3tYh2wW/bmw-3series-main.jpg",
+      "https://i.postimg.cc/wxcpX6rD/bmw-3series-2.jpg",
+      "https://i.postimg.cc/zXN0xY6m/bmw-3series-3.jpg",
+      "https://i.postimg.cc/sX1BwZ6C/bmw-3series-4.jpg",
+      "https://i.postimg.cc/bN3hR2g3/bmw-3series-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  },
+  {
+    "id": 10,
+    "make": "Audi",
+    "model": "Q5",
+    "year": 2024,
+    "condition": "Nuevo",
+    "city": "León, Guanajuato",
+    "contact": "4770123456",
+    "details": "Audi Q5 S line. Cero kilómetros. Quattro. Virtual Cockpit. Garantía de 3 años. Se factura a tu nombre.",
+    "mainImage": "https://i.postimg.cc/y8B4zZgM/audi-q5-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/y8B4zZgM/audi-q5-main.jpg",
+      "https://i.postimg.cc/Hk5F5M6m/audi-q5-2.jpg",
+      "https://i.postimg.cc/X7F3fP8G/audi-q5-3.jpg",
+      "https://i.postimg.cc/50f9fXzV/audi-q5-4.jpg",
+      "https://i.postimg.cc/sxnnyWkR/audi-q5-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  },
+  {
+    "id": 11,
+    "make": "Mercedes-Benz",
+    "model": "Clase C",
+    "year": 2021,
+    "condition": "Seminuevo",
+    "city": "Irapuato, Guanajuato",
+    "contact": "4771123457",
+    "details": "C200 Avantgarde. 35,000 km. Híbrido ligero. Placas de Guanajuato. Todos los servicios en agencia Mercedes.",
+    "mainImage": "https://i.postimg.cc/t4vYV07M/mb-c-class-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/t4vYV07M/mb-c-class-main.jpg",
+      "https://i.postimg.cc/mD8g4S7G/mb-c-class-2.jpg",
+      "https://i.postimg.cc/BvpP6cK3/mb-c-class-3.jpg",
+      "https://i.postimg.cc/fLZ5n19S/mb-c-class-4.jpg",
+      "https://i.postimg.cc/zvn2Xq0H/mb-c-class-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  },
+  {
+    "id": 12,
+    "make": "Jeep",
+    "model": "Wrangler",
+    "year": 2019,
+    "condition": "Usado",
+    "city": "León, Guanajuato",
+    "contact": "4772234568",
+    "details": "Versión Rubicon. 4x4. Llantas todo terreno al 80%. Toldo removible. 70,000 km. Sin modificaciones extremas. Muy bien cuidado.",
+    "mainImage": "https://i.postimg.cc/XvCg3y8v/jeep-wrangler-main.jpg",
+    "galleryImages": [
+      "https://i.postimg.cc/XvCg3y8v/jeep-wrangler-main.jpg",
+      "https://i.postimg.cc/VLh0fX0y/jeep-wrangler-2.jpg",
+      "https://i.postimg.cc/qMqQh23r/jeep-wrangler-3.jpg",
+      "https://i.postimg.cc/k47h8T5P/jeep-wrangler-4.jpg",
+      "https://i.postimg.cc/C10z1xN5/jeep-wrangler-5.jpg"
+    ],
+    "isPremium": false,
+    "videoUrl": null
+  }
+]
   },
   {
     "id": 3,
