@@ -6,6 +6,7 @@
     --white-color: #FFFFFF;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --border-radius: 12px;
+    --premium-color: #FFB800; /* Color para destacar lo premium */
 }
 
 * {
@@ -34,6 +35,407 @@ body {
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.btn-announce {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-announce:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Search and Filter */
+.search-filter-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+.search-bar input, .filter-bar select {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Car Grid */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+.car-card {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Para la insignia */
+    border: 2px solid transparent; /* Borde para la transición */
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.car-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.car-card-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.car-card-info p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.btn-details {
+    margin-top: auto;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-details:hover {
+    background-color: #0056b3;
+}
+
+/* --- ESTILOS PREMIUM --- */
+.car-card.premium {
+    border-color: var(--premium-color);
+    box-shadow: 0 6px 20px rgba(255, 184, 0, 0.4);
+}
+
+.car-card.premium::after {
+    content: 'DESTACADO';
+    position: absolute;
+    top: 10px;
+    right: -1px;
+    background-color: var(--premium-color);
+    color: var(--text-color);
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-family: 'Poppins', sans-serif;
+}
+/* --- FIN ESTILOS PREMIUM --- */
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--white-color);
+    margin: 5% auto;
+    padding: 0;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    display: flex;
+    overflow: hidden;
+    animation: slideIn 0.4s;
+}
+
+.modal-gallery {
+    flex: 1.5;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    animation: fadeIn 0.5s;
+}
+.gallery-image.active {
+    display: block;
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.gallery-nav button {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.gallery-nav button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.prev { border-radius: 0 5px 5px 0; }
+.next { border-radius: 5px 0 0 5px; }
+
+
+.modal-details {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.modal-details h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el contenedor del video */
+.video-container {
+    margin-bottom: 20px;
+}
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.modal-details p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#modal-details-text {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.contact-number {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #25D366;
+    color: white;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DAE53;
+    transform: scale(1.02);
+}
+
+.btn-back {
+    width: 100%;
+    background-color: #6c757d;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+/* Footer */
+.main-footer {
+    background-color: var(--text-color);
+    color: var(--white-color);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-footer .btn-announce {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-info .terms {
+    font-size: 0.8rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 10px auto 0 auto;
+}
+
+/* --- RESPONSIVE DESIGN CON CAMBIOS --- */
+@media (max-width: 992px) {
+    .car-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .modal-content {
+        flex-direction: column;
+        margin: 10% auto;
+        height: 80vh;
+    }
+    .modal-gallery {
+        height: 40%;
+    }
+    .modal-details {
+       height: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* CAMBIO: De 2 columnas a 2 en tabletas pequeñas */
+    .car-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .search-filter-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-bar input, .filter-bar select {
+        width: 100%;
+        max-width: 400px;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .btn-announce {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    .car-card-img {
+        height: 140px; /* Ajustar altura para 2 columnas */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    /* CAMBIO: De 1 columna a 2 en móviles */
+    .car-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+        height: 90vh;
+    }
+    .modal-details {
+        padding: 20px;
+    }
+    .modal-details h2 {
+        font-size: 1.5rem;
+    }
+    .modal-details p {
+        font-size: 1rem;
+    }
+    .car-card-img {
+        height: 120px; /* Ajustar altura para que se vea bien en 2 columnas en móvil */
+    }
+    .car-card-info h3 {
+        font-size: 1rem;
+    }
+    .car-card-info p {
+        font-size: 0.8rem;
+    }
+}
     z-index: 1000;
 }
 
@@ -389,3 +791,4 @@ body {
         font-size: 1rem;
     }
 }
+
